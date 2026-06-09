@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfólio</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+         NAVBAR
+    =========================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-custom shadow-sm">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold">
+                Portfólio
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPortfolio">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPortfolio">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">
+                            Portfólio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ==========================================
+         CABEÇALHO
+    =========================================== -->
+
+    <div class="container mt-5 text-center">
+
+        <h1 class="fw-bold">
+            Meus Projetos
+        </h1>
+
+        <p class="text-muted">
+            Projetos acadêmicos e práticos desenvolvidos durante meus estudos.
+        </p>
+
+    </div>
+
+    <!-- ==========================================
+         PROJETOS
+    =========================================== -->
+
+    <div class="container mt-4">
+
+        <div class="row g-4">
+
+            <!-- PROJETO 1 -->
+
+            <div class="col-lg-4">
+
+                <div class="card shadow-sm h-100">
+
+                    <img src="cuesta.png" class="card-img-top" alt="Sistema de Turismo">
+
+                    <div class="card-body">
+
+                        <h5>Sistema de Turismo</h5>
+
+                        <p>
+                            Projeto desenvolvido em HTML, CSS e JavaScript.
+                        </p>
+
+                        <!-- Eu abro o modal do projeto -->
+
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalTurismo">
+
+                            Ver Projeto
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PROJETO 2 -->
+
+            <div class="col-lg-4">
+
+                <div class="card shadow-sm h-100">
+
+                    <img src="Bootresponsivo.png" class="card-img-top" alt="Site Responsivo">
+
+                    <div class="card-body">
+
+                        <h5>Site Responsivo</h5>
+
+                        <p>
+                            Layout responsivo utilizando Bootstrap.
+                        </p>
+
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalResponsivo">
+
+                            Ver Projeto
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PROJETO 3 -->
+
+            <div class="col-lg-4">
+
+                <div class="card shadow-sm h-100">
+
+                    <img src="controleEstoque.png" class="card-img-top" alt="Controle de Estoque">
+
+                    <div class="card-body">
+
+                        <h5>Controle de Estoque</h5>
+
+                        <p>
+                            Sistema desenvolvido em Python.
+                        </p>
+
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalEstoque">
+
+                            Ver Projeto
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ==========================================
+     MODAL TURISMO
+========================================== -->
+
+    <div class="modal fade" id="modalTurismo">
+
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">
+                        Sistema de Turismo
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <div id="carouselTurismo" class="carousel slide">
+
+                        <div class="carousel-inner">
+
+                            <!-- Imagem 1 -->
+                            <div class="carousel-item active text-center">
+
+                                <img src="cuesta.png" class="img-fluid projeto-img">
+
+                                <div class="descricao-projeto">
+
+                                    <h4>Sistema de Turismo</h4>
+
+                                    <p>
+                                        Página inicial do sistema contendo informações
+                                        sobre os pontos turísticos da região da Cuesta.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Imagem 2 -->
+                            <div class="carousel-item text-center">
+
+                                <img src="turismo1.png" class="img-fluid projeto-img">
+
+                                <div class="descricao-projeto">
+
+                                    <h4>Área de contato</h4>
+
+                                    <p>
+                                        Área destinada à exibição dos principais
+                                        contatos e localização.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Imagem 3 -->
+                            <div class="carousel-item text-center">
+
+                                <img src="turismo2.png" class="img-fluid projeto-img">
+
+                                <div class="descricao-projeto">
+
+                                    <h4>Formulário para se inscrever em eventos futuros</h4>
+
+                                    <p>
+                                        Formulário pensado para o lazer do usuário.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Imagem 4 -->
+                            <div class="carousel-item text-center">
+
+                                <img src="turismo3.png" class="img-fluid projeto-img">
+
+                                <div class="descricao-projeto">
+
+                                    <h4>Área de eventos</h4>
+
+                                    <p>
+                                        Interface organizada para facilitar
+                                        a experiência do usuário, melhorando sua experiência e ajudando a achar melhores
+                                        <br>eventos para aproveitar sua estadia na cidade.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTurismo"
+                            data-bs-slide="prev">
+
+                            <span class="carousel-control-prev-icon"></span>
+
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselTurismo"
+                            data-bs-slide="next">
+
+                            <span class="carousel-control-next-icon"></span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ==========================================
+         MODAL RESPONSIVO
+    =========================================== -->
+
+    <div class="modal fade" id="modalResponsivo">
+
+        <div class="modal-dialog modal-xl">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">
+                        Site Responsivo
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <div id="carouselResponsivo" class="carousel slide">
+
+                        <div class="carousel-inner">
+
+                            <!-- Imagem 1 -->
+
+                            <div class="carousel-item active text-center">
+
+                                <img src="Bootresponsivo.png" class="img-fluid projeto-img">
+
+                                <div class="descricao-projeto">
+
+                                    <h4>Página Inicial Responsiva</h4>
+
+                                    <p>
+
+                                        Demonstração da adaptação do layout para smartphones
+                                        e tablets. Os elementos são reorganizados automaticamente
+                                        para proporcionar uma navegação mais intuitiva e uma
+                                        melhor experiência ao usuário.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Imagem 2 -->
+
+                            <div class="carousel-item text-center">
+
+                                <img src="responsivo.png" class="img-fluid projeto-img">
+
+                                <div class="descricao-projeto">
+
+                                    <h4>Versão Mobile</h4>
+
+                                    <p>
+                                        Projeto desenvolvido utilizando HTML, CSS e Bootstrap 5.
+                                        Nesta tela apresento a estrutura principal do site,
+                                        com componentes organizados e layout adaptável para
+                                        diferentes resoluções.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselResponsivo"
+                            data-bs-slide="prev">
+
+                            <span class="carousel-control-prev-icon"></span>
+
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselResponsivo"
+                            data-bs-slide="next">
+
+                            <span class="carousel-control-next-icon"></span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ==========================================
+         MODAL ESTOQUE
+    =========================================== -->
+
+    <div class="modal fade" id="modalEstoque">
+
+        <div class="modal-dialog modal-xl">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">
+                        Controle de Estoque
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <div id="carouselEstoque" class="carousel slide">
+
+                        <div class="carousel-inner">
+
+                            <!-- Imagem 1 -->
+
+                            <div class="carousel-item active text-center">
+
+                                <img src="controleEstoque.png" class="img-fluid projeto-img" alt="Controle de Estoque">
+
+                                <div class="descricao-projeto">
+
+                                    <h4>Cadastro e Gerenciamento de Produtos</h4>
+
+                                    <p>
+                                        Sistema desenvolvido em Python para auxiliar no controle
+                                        de estoque. Nesta tela é possível cadastrar produtos,
+                                        visualizar informações e realizar o gerenciamento dos itens
+                                        armazenados.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Imagem 2 -->
+
+                            <div class="carousel-item text-center">
+
+                                <img src="tomatecru.png" class="img-fluid projeto-img" alt="Quitanda do Tomate Cru">
+
+                                <div class="descricao-projeto">
+
+                                    <h4>Interface da Quitanda do Tomate Cru</h4>
+
+                                    <p>
+                                        Aplicação prática simulando o gerenciamento de estoque de uma
+                                        quitanda. O sistema permite registrar produtos, controlar
+                                        quantidades e organizar informações para facilitar a administração
+                                        do negócio.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEstoque"
+                            data-bs-slide="prev">
+
+                            <span class="carousel-control-prev-icon"></span>
+
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselEstoque"
+                            data-bs-slide="next">
+
+                            <span class="carousel-control-next-icon"></span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

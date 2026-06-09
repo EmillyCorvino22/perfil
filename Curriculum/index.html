@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Perfil Profissional</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ALTERAÇÃO: Navbar com estrutura mais profissional -->
+    <nav class="navbar navbar-expand-lg navbar-custom shadow-sm">
+        <div class="container">
+
+            <!-- ALTERAÇÃO: Nome da página com maior destaque -->
+            <a class="navbar-brand fw-bold text-primary" href="#">
+                Meu Perfil
+            </a>
+
+            <!-- ALTERAÇÃO: Menu responsivo para dispositivos móveis -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                <!-- ALTERAÇÃO: Navegação alinhada à direita -->
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">
+                            Portfólio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- ALTERAÇÃO: Espaçamento maior para melhorar a leitura -->
+    <div class="container mt-5">
+
+        <!-- ALTERAÇÃO: Card principal para apresentação profissional -->
+        <div class="card shadow-sm border-0 p-4">
+
+            <div class="row align-items-center">
+
+                <!-- ALTERAÇÃO: Foto posicionada em coluna separada -->
+                <div class="col-md-4 text-center">
+
+                    <img src="foto.jpeg" alt="Foto de Perfil"
+                        class="img-fluid rounded-circle border border-3 border-light shadow" width="220">
+
+                </div>
+
+                <!-- ALTERAÇÃO: Informações do perfil organizadas -->
+                <div class="col-md-8">
+
+                    <h1 class="fw-bold">
+                        Emilly Daiane Campos da Silva
+                    </h1>
+
+                    <h5 class="text-secondary mb-3">
+                        Estudante de Desenvolvimento de Sistemas
+                    </h5>
+
+                    <!-- Texto mais organizado e profissional -->
+                    <p class="lead">
+                        Sou uma pessoa responsavel e perseverante , sempre buscando aprender
+                        novas tecnologias e aprimorar minhas habilidades profissionais.
+                        Tenho interesse em desenvolvimento web, design de interfaces
+                        e soluções tecnológicas que contribuam para a experiência do usuário.
+                    </p>
+
+                    <!-- Botão Bootstrap para aparência mais corporativa -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#meuModal">Ver
+                        Ver Perfil Completo </button>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- estrutura Modal -->
+    <div class="modal fade" id="meuModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Informações</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Emilly Daiane Campos da Silva:
+                    <br>Olá, me chamo Emilly, atualmente tenho 17 anos e estou cursando Ensino médio técnico pela escola
+                    Sophia Gabriel de
+                    Oliveira, vinculado com Senai. No Senai realizo Curso Técnico de Desenvolvimento de Sistemas com
+                    registro empregatício com a Usina Açucareira de São Manoel no período de 1 ano.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ALTERAÇÃO: Seção de Experiência, Habilidades e Formação -->
+    <div class="container mt-5">
+
+        <div class="card shadow-sm border-0">
+
+            <div class="card-header bg-primary text-white">
+                <h3 class="mb-0">Informações Profissionais</h3>
+            </div>
+
+            <div class="card-body">
+
+                <div class="accordion" id="accordionProfissional">
+
+                    <!-- EXPERIÊNCIA PROFISSIONAL -->
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header">
+
+                            <!-- ALTERAÇÃO: Sessão para apresentar experiências profissionais -->
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#experiencia">
+
+                                Experiência Profissional
+
+                            </button>
+
+                        </h2>
+
+                        <div id="experiencia" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionProfissional">
+
+                            <div class="accordion-body">
+
+                                <h5>Atendente / Auxiliar de Padaria</h5>
+
+                                <p class="text-muted">
+                                    Panificadora Almeida • 2025 - 2026
+                                </p>
+
+                                <!-- ALTERAÇÃO: Inclusão das atribuições do cargo -->
+                                <strong>Atribuições:</strong>
+                                <ul>
+                                    <li>Atendimento ao cliente e suporte nas vendas.</li>
+                                    <li>Reposição e organização de produtos nas vitrines.</li>
+                                    <li>Pesagem e embalagem de pães, bolos e salgados.</li>
+                                    <li>Operação de caixa e recebimento de pagamentos.</li>
+                                    <li>Auxílio no controle de estoque.</li>
+                                </ul>
+
+                            </div>
+
+                            <div class="accordion-body">
+
+                                <h5>Registro Empregatício com a Usina Açucareira de São Manoel</h5>
+
+                                <p class="text-muted">
+                                    Usina Açucareira de São Manoel • 2025 - 2026
+                                </p>
+
+                                <!-- ALTERAÇÃO: Inclusão das atribuições do cargo -->
+                                <strong>Atribuições:</strong>
+                                <!-- vinculo usina sao manoel -->
+                                <ul>
+                                    <li>Comprovação de assiduidade, comprometimento e responsabilidade no ambiente
+                                        corporativo.</li>
+
+                                    <li>Desenvolvimento e fortalecimento da postura profissional, ética e disciplina nas
+                                        atividades diárias.</li>
+
+                                    <li>Participação no desenvolvimento de aplicações Front-End utilizando HTML, CSS,
+                                        JavaScript e Bootstrap.</li>
+
+                                    <li>Auxílio no desenvolvimento Back-End e na implementação de funcionalidades para
+                                        sistemas web.</li>
+
+                                    <li>Manipulação e gerenciamento de bancos de dados para armazenamento e consulta de
+                                        informações.</li>
+
+                                    <li>Elaboração de protótipos de interfaces e planejamento de soluções voltadas à
+                                        experiência do usuário.</li>
+
+                                    <li>Participação na elaboração e documentação de projetos tecnológicos, aplicando
+                                        boas práticas de desenvolvimento.</li>
+
+                                    <li>Trabalho em equipe utilizando metodologias de organização e acompanhamento de
+                                        projetos.</li>
+
+                                    <li>Aprimoramento contínuo de conhecimentos em tecnologia, programação e inovação
+                                        digital.</li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- HABILIDADES -->
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header">
+
+                            <!-- ALTERAÇÃO: Sessão de habilidades técnicas e comportamentais -->
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#habilidades">
+
+                                Habilidades
+
+                            </button>
+
+                        </h2>
+
+                        <div id="habilidades" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionProfissional">
+
+                            <div class="accordion-body">
+
+                                <h5>Hard Skills</h5>
+
+                                <span class="badge bg-primary">HTML</span>
+                                <span class="badge bg-primary">CSS</span>
+                                <span class="badge bg-primary">JavaScript</span>
+                                <span class="badge bg-primary">Bootstrap</span>
+                                <span class="badge bg-primary">GitHub</span>
+
+                                <hr>
+
+                                <h5>Soft Skills</h5>
+
+                                <ul>
+                                    <li>Responsabilidade</li>
+                                    <li>Organização</li>
+                                    <li>Trabalho em equipe</li>
+                                    <li>Comunicação</li>
+                                    <li>Aprendizado contínuo</li>
+                                    <li>Resolução de problemas</li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- FORMAÇÃO -->
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header">
+
+                            <!-- ALTERAÇÃO: Sessão para formação acadêmica -->
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#formacao">
+
+                                Formação Acadêmica
+
+                            </button>
+
+                        </h2>
+
+                        <div id="formacao" class="accordion-collapse collapse" data-bs-parent="#accordionProfissional">
+
+                            <div class="accordion-body">
+
+                                <h5>Desenvolvimento de Sistemas</h5>
+
+                                <p>
+                                    Ensino Técnico em Desenvolvimento de Sistemas
+                                </p>
+
+                                <p class="text-muted">
+                                    Em andamento
+                                </p>
+
+                                <hr>
+
+                                <h5>Cursos Complementares</h5>
+
+                                <ul>
+                                    <li>HTML e CSS</li>
+                                    <li>Bootstrap</li>
+                                    <li>Lógica de Programação</li>
+                                    <li>Git e GitHub</li>
+                                    <li>Designer de Cílios Profissional 01/10/2024 - 17/12/2024</li>
+                                    <li>Designer de Sobrancelhas Profissional 07/01/2025 - 25/02/2025</li>
+                                    <li>Competência Transversal - Segurança no Trabalho 17/03/2025 - 12/04/2025.
+                                    <li>Desvendando a Descarbonização 17/03/2025 - 03/06/2025</li>
+                                    <li>Desvendando a Indústria 4.0 23/02/2026 - 29/03/2026</li>
+                                    <li>Ética na Inteligência Artificial 17/03/2025 - 05/06/2025</li>
+                                    <li>Excel Básico 17/03/2025 - 13/04/2025</li>
+                                    <li>Fluência - Fundamentos da Inteligência Artificial 17/03/2025 - 06/06/2025</li>
+                                    <li>Fundamentos da Gestão de Projetos Aplicados na Indústria 23/02/2026 - 27/03/2026
+                                    </li>
+                                    <li>Por dentro da Segurança Cibernética 17/03/2025 - 09/04/2025</li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- ALTERAÇÃO: Footer mais organizado e profissional -->
+    <footer class="bg-white border-top mt-5 py-4">
+
+        <div class="container text-center">
+
+            <h5 class="mb-3">
+                Informações para Contato
+            </h5>
+
+            <p class="text-muted mb-0">
+                Email: emillydaiane124@gmail.com
+            </p>
+            <p class="text-muted mb-0">
+                Telefone: (14) 98815-9168
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
